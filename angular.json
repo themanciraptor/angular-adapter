@@ -161,7 +161,6 @@
       }
     }
   },
-  "defaultProject": "angular-adapter",
   "cli": {
     "analytics": false
   }

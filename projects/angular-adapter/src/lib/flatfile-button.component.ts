@@ -6,7 +6,7 @@ import {
   OnDestroy,
   OnInit,
   Output,
-  ViewChild,
+  ViewChild
 } from '@angular/core';
 
 import { flatfileImporter, IEvents, IFlatfileImporter } from '@flatfile/sdk';
@@ -47,7 +47,7 @@ export class FlatfileButtonComponent implements OnInit, OnDestroy {
 
   @ViewChild('ref', { read: ElementRef, static: true }) ref: ElementRef;
 
-  isImporterLoaded: boolean = true;
+  isImporterLoaded = true;
 
   private flatfileImporter: IFlatfileImporter;
 

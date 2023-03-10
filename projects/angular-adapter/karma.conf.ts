@@ -1,7 +1,9 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/1.0/config/configuration-file.html
+import { Config } from 'karma';
+import { join } from 'path';
 
-module.exports = function (config) {
+module.exports = (config: Config) => {
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
@@ -16,7 +18,7 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, '../../coverage/angular-adapter'),
+      dir: join(__dirname, '../../coverage/angular-adapter'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },

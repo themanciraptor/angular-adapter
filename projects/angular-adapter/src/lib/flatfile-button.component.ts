@@ -6,7 +6,7 @@ import {
   OnDestroy,
   OnInit,
   Output,
-  ViewChild
+  ViewChild,
 } from '@angular/core';
 
 import { flatfileImporter, IEvents, IFlatfileImporter } from '@flatfile/sdk';

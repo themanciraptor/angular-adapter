@@ -5,11 +5,9 @@
 import {
   flatfileImporter,
   IFlatfileImporter,
-  IUnsafeGenerateTokenOptions
+  IUnsafeGenerateTokenOptions,
 } from '@flatfile/sdk';
 
 export * from './lib/flatfile-button.component';
 export * from './lib/interfaces';
 export { flatfileImporter, IFlatfileImporter, IUnsafeGenerateTokenOptions };
-
-

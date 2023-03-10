@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -6,7 +7,7 @@ import {
   OnDestroy,
   OnInit,
   Output,
-  ViewChild,
+  ViewChild
 } from '@angular/core';
 
 import { flatfileImporter, IEvents, IFlatfileImporter } from '@flatfile/sdk';
@@ -33,6 +34,8 @@ import { flatfileImporter, IEvents, IFlatfileImporter } from '@flatfile/sdk';
       }
     `,
   ],
+  standalone: true,
+  imports: [CommonModule],
 })
 export class FlatfileButtonComponent implements OnInit, OnDestroy {
   @Input() token: string;
